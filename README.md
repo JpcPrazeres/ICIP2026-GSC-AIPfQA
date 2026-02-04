@@ -1,6 +1,6 @@
-This repository contains the dataset, experimental assets, and results associated with a **subjective quality assessment study** developed in the context of an **ICIP 2026 Grand Challenge**, focusing on **Gaussian Splatting Content (GSC)** and **Adaptive / In-Point Feature Quality Assessment (AIPfQA)**.
+This repository contains the dataset, experimental assets, and results associated a **subjective quality assessment** **Gaussian Splatting Coding**
 
-The repository aggregates all materials required to understand, reproduce, and analyze the subjective evaluation experiments conducted in this work.
+The repository aggregates all materials required to reproduce, and analyze the subjective quality evaluation conducted in this work.
 
 ---
 
@@ -27,8 +27,7 @@ ICIP2026-GSC-AIPfQA/
 │   └── coded/              # Coded / processed video sequences under test
 ├── Results.xlsx            # Aggregated subjective evaluation results
 ├── Subject_List.xlsx       # List of test subjects and related metadata
-├── README.md               # Repository description
-└── .gitattributes          # Git configuration for large or binary files
+└── README.md               # Repository description
 ```
 
 ---
@@ -39,16 +38,16 @@ ICIP2026-GSC-AIPfQA/
 Contains camera trajectory definitions used to render or display the video content evaluated in the subjective experiments. These paths ensure consistent viewpoints and motion across reference and coded sequences.
 
 ### 📁 `videos_ref/reference/`
-Reference (ground-truth) video sequences presented to subjects. These serve as anchors for quality comparison during the subjective evaluation.
+Folder containing the reference video sequences presented to subjects.
 
 ### 📁 `videos_coded/coded/`
-Video sequences generated using different processing, compression, or adaptive feature configurations. These are the test stimuli evaluated against the references.
+Folder containing the coded video sequences.
 
 ### 📄 `Results.xlsx`
 Contains the collected subjective evaluation results, such as Mean Opinion Scores (MOS), confidence intervals, or other derived statistics used for analysis.
 
 ### 📄 `Subject_List.xlsx`
-Metadata related to test participants, including anonymized subject identifiers and any grouping or screening information used in the study.
+Information related to test participants, including anonymized subject identifiers and any grouping or screening information used in the study.
 
 ---
 
@@ -62,12 +61,3 @@ This repository is intended for:
 - Research on perceptual quality assessment for 3D and novel view synthesis content  
 
 ---
-
-## Notes
-
-- No license is currently specified; usage should follow academic best practices.
-- Large binary files (e.g., videos) are tracked using Git attributes where applicable.
-
----
-
-If you use this repository in academic work, please cite the corresponding ICIP 2026 paper.
